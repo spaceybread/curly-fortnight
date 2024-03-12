@@ -9,12 +9,12 @@ def compute(ord, pr):
 
 
 def rc(ord):
-    if ord == 0:
+    if ord == 1:
         return 0
     return int((rc(ord - 1) + 11 * 10**(ord - 3))*9 + (10**(ord - 3) - 1))
 
 def rc1(ord):
-    if ord == 0:
+    if ord == 1:
         return 0
     return int(9 * rc1(ord - 1) + 10**(ord - 1) - 1)
 
